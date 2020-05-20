@@ -15,7 +15,7 @@ class ProductsImport implements ToModel
     public function model(array $row)
     {
         return new Product([
-            'name'     => $row[1],
+            'title'     => $row[1],
             'detail'    => $row[2], 
         ]);
     }
